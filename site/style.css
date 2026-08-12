@@ -59,11 +59,19 @@ a {
   background: var(--paper);
 }
 
+/* On narrow screens show the whole illustration; crop it only when there is
+   enough width that cropping stays gentle. */
 .hero img {
   width: 100%;
-  height: clamp(20rem, 58vh, 34rem);
-  object-fit: cover;
-  object-position: center 48%;
+  height: auto;
+}
+
+@media (min-width: 48rem) {
+  .hero img {
+    height: clamp(20rem, 55vh, 32rem);
+    object-fit: cover;
+    object-position: center 48%;
+  }
 }
 
 /* ---------- Masthead ---------- */
