@@ -1,0 +1,44 @@
+{
+  "extends": [
+    "config:recommended"
+  ],
+  "automerge": false,
+  "respectLatest": true,
+  "ignoreTests": true,
+  "minimumReleaseAge": null,
+  "rebaseWhen": "auto",
+  "packageRules": [
+    {
+      "matchUpdateTypes": [
+        "major"
+      ],
+      "automerge": false
+    },
+    {
+      "matchUpdateTypes": [
+        "minor",
+        "patch"
+      ],
+      "automerge": false
+    }
+  ],
+  "github-actions": {
+    "managerFilePatterns": [
+      "^\\.github\\/workflows\\/[^/]+\\.ya?ml$"
+    ]
+  },
+  "customManagers": [
+    {
+      "customType": "regex",
+      "managerFilePatterns": [
+        "^\\.github\\/workflows\\/[^/]+\\.ya?ml$"
+      ],
+      "matchStrings": [
+        "wranglerVersion:\\s*[\"'](?<currentValue>[^\"'\\s]+)[\"']"
+      ],
+      "datasourceTemplate": "npm",
+      "depNameTemplate": "wrangler",
+      "versioningTemplate": "semver"
+    }
+  ]
+}
