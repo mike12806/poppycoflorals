@@ -1,7 +1,7 @@
 # GitHub Copilot Instructions
 
 ## Project Overview
-This repository is the website for **Poppy & Co. Florals**, a small one-person floral
+This repository is the website for **Poppy Co. Florals**, a small one-person floral
 studio that designs arrangements for weddings and events. It is a hand-written,
 single-page static site deployed to **Cloudflare Pages** at `poppycoflorals.com`.
 All changes are version-controlled in Git and deployed automatically via GitHub Actions.
