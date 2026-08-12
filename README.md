@@ -1,6 +1,6 @@
-# Poppy &amp; Co. Florals
+# Poppy Co. Florals
 
-Single-page static site for Poppy &amp; Co. Florals — wedding and event flower
+Single-page static site for Poppy Co. Florals — wedding and event flower
 arrangements — deployed to Cloudflare Pages at
 [poppycoflorals.com](https://poppycoflorals.com).
 
