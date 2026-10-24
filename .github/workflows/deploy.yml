@@ -10,7 +10,7 @@ env:
   ZONE_NAME: poppycoflorals.com
   APEX_DOMAIN: poppycoflorals.com
   WWW_DOMAIN: www.poppycoflorals.com
-  WRANGLER_VERSION: "3.90.0"
+  WRANGLER_VERSION: "3.114.17"
 
 jobs:
   deploy:
