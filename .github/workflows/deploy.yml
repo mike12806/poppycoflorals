@@ -26,7 +26,7 @@ jobs:
       # reached over the tailnet as tag:ci-vault with no stored secret. Runs
       # before npm and leaves the tailnet before any build code runs.
       - name: Read secrets from Vault
-        uses: mike12806/public-jobs/.github/actions/vault-secrets@95924d56dcac46bd0e9a8120d21bd7b78c000d2d # main
+        uses: mike12806/public-jobs/.github/actions/vault-secrets@e1622009ec18f847e8da13e2396acb9e1167a993 # main
         with:
           role: poppycoflorals-deploy
           hostname: github-poppycoflorals-deploy
